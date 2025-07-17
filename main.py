@@ -17,7 +17,7 @@ def read_root():
 API_KEY = 'AKQTV2XAPAX1SYW6QEE4'
 API_SECRET = 'Z6LvqE48tGCrxo2p2cUKumf5AGENRig52dcTvjbn'
 BASE_URL = 'https://paper-api.alpaca.markets'
-SYMBOL = 'XRPUSD'
+SYMBOL = 'XRP/USD'
 TIMEFRAME = '5Min'
 BB_PERIOD = 20
 RISK_PERCENT = 0.05
