@@ -1,3 +1,18 @@
+from fastapi import FastAPI
+import uvicorn
+import os
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Render"}
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
+
 import alpaca_trade_api as tradeapi
 import pandas as pd
 import time
